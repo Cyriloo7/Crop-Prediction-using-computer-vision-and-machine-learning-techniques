@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Form</title>
+  </head>
+
+  <style>
+  body {
+  background-image: url("https://wallpaperaccess.com/full/137520.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  input[type="submit"] {
+  width: 200px;
+  height: 50px;
+}
+  input[type="file"] ,label{
+  width: 80px;
+  height: 30px;
+      color: white;
+}
+label{
+color: black;
+}
+</style>
+
+  <body>
+
+    <form align="center" style="margin-top: 30vh;" method="POST" action="{{ url_for('process_input') }}" enctype="multipart/form-data">
+      <label for="file">Upload Image :</label>
+        <input type="file" name="file" ><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

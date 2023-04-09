@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="">
+<style>
+  body {
+      background-image: url("https://foodprint.org/wp-content/uploads/2018/10/GettyImages-907966126_optimized.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+h3,p{
+    color: black;
+    font-size: large;
+}
+h2{
+    color: white;
+    font-size: xxx-large;
+}
+</style>
+<head>
+	<title>Result</title>
+</head>
+<body align="center" style="margin-top: 10vh;">
+    <h3 align="center">Prediction Result</h3>
+    <picture>
+        <h3>Yolov7 Output</h3>
+        <img src= "../../static/input.jpg" alt="Output Image" width="400" height="300"/>
+    </picture>
+	<h2 align="center">The predicted result is: {{ result }}</h2>
+</body>
+</html>
