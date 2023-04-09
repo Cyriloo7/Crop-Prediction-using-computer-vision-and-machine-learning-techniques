@@ -29,20 +29,15 @@ def process_input():
         file.save("Input_image/input.jpg")
         print("hello")
         try:
-            print("1")
             # Load the image
             image_path = 'Input_image/input.jpg'  # Replace with the path to your image
-            print("2")
             image = Image.open(image_path)
 
             # Load the YOLOv7 model
             model = torch.hub.load('WongKinYiu/yolov7', 'custom', 'C:/Users/cyril/PycharmProjects/Tarp/best.pt')
-            print("3")
 
             output = model(image)
-            print("5")
             print(output)
-            print("6")
             # Save image with bounding boxes drawn
             output.save("static/")
 
